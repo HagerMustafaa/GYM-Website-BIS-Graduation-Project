@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="nutstyle.css" rel="stylesheet">
+    <link href="../style.css" rel="stylesheet">
+</head>
+<body>
+
+ <!--nav bar-->   
+<header class="main-header">
+
+    <div class="logo" >
+    <img src="../Gallery/Fitness  Logo.png" alt="Logo" class="site-logo">
+    <div class="logo-name">Wellness&<span>Power</span></div>
+    </div>
+
+    <nav class="nav-links">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#about">About</a>
+        <a href="../index.html#shop">Shop</a>
+        <a href="../index.html#nutrition">Nutrition</a>
+        <a href="../index.html#guides">Guides</a>
+        <a href="../gym accesories/gym accesories/CART/cart.html" class="cart-icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        <a href="../Sign/login.html" class="login-btn">Log In</a>           
+    </nav>
+</header>
+
+    <div class="nutrition-wrapper">
+        
+        <header class="nutrition-header">
+            <h1>Nutrition</h1>
+            <p>Choose your perfect diet plan</p>
+        </header>
+
+        <nav class="filter-section-nutrition">
+            <div class="filters-container-nutrition" id="filters">
+                <button onclick="filterMeals('all')" class="filter-btn active">All</button>
+                <button onclick="filterMeals('keto')" class="filter-btn">Keto</button>
+                <button onclick="filterMeals('paleo')" class="filter-btn">Paleo</button>
+                <button onclick="filterMeals('protein')" class="filter-btn">Protein Build</button>
+                <button onclick="filterMeals('vegan')" class="filter-btn">Vegan</button>
+                <button onclick="filterMeals('vegetarian')" class="filter-btn">Vegetarian</button>
+                <button onclick="filterMeals('dash')" class="filter-btn">DASH</button>
+                <button onclick="filterMeals('mediterranean')" class="filter-btn">Mediterranean</button>
+                <button onclick="filterMeals('whole30')" class="filter-btn">Whole30</button>
+            </div>
+        </nav>
+
+        <main class="content-area">
+            <div id="meals-grid" class="meals-grid">
+                </div>
+        </main>
+
+    </div>
+
+    <div id="toast" class="toast"><span id="toast-message">Added ✓</span></div>
+
+    <script src="nut.js"></script>
+</body>
+</html>
