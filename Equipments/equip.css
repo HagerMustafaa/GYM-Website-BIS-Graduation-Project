@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+}
+
+
+body, html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.equipment-wrapper {
+    background-image: url(../Gallery/wave.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 800px;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+}
+
+
+.equipment-header {
+    text-align: center;
+    padding: 60px 20px;
+    background: transparent;
+}
+
+.equipment-header h1 {
+    font-size: 4rem;
+    color: #01000a;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+.equipment-header span{
+    color:  #494949;
+}
+
+.content-area {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+.equip-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
+    gap: 25px;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.equip-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+    display: flex;
+    flex-direction: column; 
+    height: 100%; 
+}
+
+
+.equip-card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+
+.eqip-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+
+.eqip-content h3 {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.eqip-price {
+    color: #050505; 
+    font-weight: 800;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+
+.stat-box {
+    padding: 8px 4px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.eqip-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.quantity-selector {
+    display: flex;
+    align-items: center;
+    background: #f3f4f6;
+    border-radius: 25px;
+    padding: 2px;
+}
+
+.qty-btn {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.qty-number {
+    width: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.add-btn {
+    flex: 1;
+    background:  #f3f4f6;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(100px);
+    background: #f3f4f6;
+    color: rgb(5, 5, 5);
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: 0.4s;
+    opacity: 0;
+    z-index: 2000;
+}
+
+.toast.show {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+}
