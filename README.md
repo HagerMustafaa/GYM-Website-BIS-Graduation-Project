@@ -1,1 +1,1 @@
-# GYM-Website-BIS-Graduation-Project
+# GYM-Website
